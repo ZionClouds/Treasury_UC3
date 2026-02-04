@@ -1,0 +1,41 @@
+# Project instructions and secrets
+CLAUDE.md
+.env
+
+# Version control
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ADK local files
+.adk/
+
+# Scripts (not needed in deployment)
+scripts/
+
+# Source data (already loaded to BigQuery)
+data/
+
+# Deployment scripts (not needed in runtime)
+deploy.py
+connect_gemini.sh
+
+# Documentation
+*.md
+README*
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
