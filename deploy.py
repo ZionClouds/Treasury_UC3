@@ -25,8 +25,10 @@ from vertexai import agent_engines
 
 from treasury_agent import root_agent
 
-# Configuration
-PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "project-zion-454116")
+# Configuration - Set GOOGLE_CLOUD_PROJECT in your .env file
+PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT")
+if not PROJECT_ID:
+    raise ValueError("GOOGLE_CLOUD_PROJECT environment variable is required. Set it in your .env file.")
 REGION = "us-central1"
 STAGING_BUCKET = f"gs://{PROJECT_ID}-treasury-agent-staging"
 DISPLAY_NAME = "treasury_portfolio_agent"

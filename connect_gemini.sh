@@ -16,13 +16,13 @@
 
 set -e
 
-# Configuration
-PROJECT_ID="project-zion-454116"
-REASONING_ENGINE_ID="1100077876264304640"
+# Configuration - UPDATE THESE VALUES
+PROJECT_ID="YOUR_PROJECT_ID"                    # e.g., "my-gcp-project"
+REASONING_ENGINE_ID="YOUR_REASONING_ENGINE_ID"  # From deploy.py output
 REASONING_ENGINE_LOCATION="us-central1"
 
-# Gemini Enterprise App ID
-APP_ID="master-agent_1747926439088"
+# Gemini Enterprise App ID - Get from Cloud Console
+APP_ID="YOUR_GEMINI_ENTERPRISE_APP_ID"          # e.g., "master-agent_1234567890"
 
 # API location (us, eu, or global)
 LOCATION="global"
